@@ -44,6 +44,7 @@ class Kernel extends HttpKernel
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
             \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class, 
             'throttle:api',
+            \Fruitcake\Cors\HandleCors::class,
     
         ],
     ];
